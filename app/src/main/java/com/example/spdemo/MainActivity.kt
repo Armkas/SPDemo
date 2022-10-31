@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var  nameText: EditText
     lateinit var ageText: EditText// 初始化时候可以不赋值 类似于 ios ?
     lateinit var sf: SharedPreferences//这是一个存储用的东西 全app内共通 存储和写入数据  类似于UnserDefault key-value形式保存
+    // 数据被保存在文件目录data文件夹下
+    // The android operating system, store shared
+    //preferences of each applicaiton as seperate files
+    //inside the "data folder of the phone.
     lateinit var editor: SharedPreferences.Editor//
 
     override fun onCreate(savedInstanceState: Bundle?) {
